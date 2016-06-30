@@ -17164,3 +17164,1488 @@ Processing by PinsController#index as HTML
   Rendered pins/index.html.erb within layouts/application (7.9ms)
   Rendered layouts/_header.html.erb (0.3ms)
 Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameToUsers (20160630130121)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "name" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160630130121"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:16:10 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/nitrous/code/photograph/app/controllers/application_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:13: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/pins_controller.rb:1:in `<top (required)>'
+
+
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.6ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:16:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  [1m[35mPin Load (0.4ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (69.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 315ms (Views: 304.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/boostrap_and_customization.self-4ee9ef6f0be66489ea2fec704a7da544c1d5d013ce71edbb5d224300d528fdbb.css?body=1" for 54.244.95.60 at 2016-06-30 13:16:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-15fb40683ff76041c7d6fe7764cd071eaf23b0c013f26dce6fe8564487cdf891.css?body=1" for 54.244.95.60 at 2016-06-30 13:16:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-06-30 13:16:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 54.244.95.60 at 2016-06-30 13:16:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for 54.244.95.60 at 2016-06-30 13:16:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 54.244.95.60 at 2016-06-30 13:16:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:17:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.5ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (28.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:17:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.2ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 54.244.95.60 at 2016-06-30 13:17:03 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 99ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 54.244.95.60 at 2016-06-30 13:17:29 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"app07g61biZnQ/YZJREJoamNgi5DxlFshu7ELNokBD3+dm6Btm9HNhFmA4ISN/1uexz11TFHSh2HZR0hrcr7Sw==", "user"=>{"name"=>"deepak1", "email"=>"deepak1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'deepak1@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "deepak1@gmail.com"], ["encrypted_password", "$2a$11$39niNoB.SDq9ud83YGYddexqQdkL2vqslL.OrCIYrevUT1ZKY3o1u"], ["name", "deepak1"], ["created_at", "2016-06-30 13:17:29.782242"], ["updated_at", "2016-06-30 13:17:29.782242"]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-06-30 13:17:29.790664"], ["current_sign_in_at", "2016-06-30 13:17:29.790664"], ["last_sign_in_ip", "54.244.95.60"], ["current_sign_in_ip", "54.244.95.60"], ["sign_in_count", 1], ["updated_at", "2016-06-30 13:17:29.791451"], ["id", 2]]
+  [1m[35m (5.1ms)[0m  commit transaction
+Redirected to https://pinteresting-194649.nitrousapp.com/
+Completed 302 Found in 211ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:17:30 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/edit" for 54.244.95.60 at 2016-06-30 13:17:34 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 0.1ms)
+
+
+Started PUT "/users" for 54.244.95.60 at 2016-06-30 13:17:50 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N60L4NxH9EqxphSHhJrHcqLE9C+Pngrq4vHkmvhk0zejQRGPZJ3dWseD4RyzvDO9cFWD1P0fEZvjej2Xj4osQQ==", "user"=>{"name"=>"deepak", "email"=>"deepak1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["name", "deepak"], ["updated_at", "2016-06-30 13:17:50.998053"], ["id", 2]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://pinteresting-194649.nitrousapp.com/
+Completed 302 Found in 177ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:17:51 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/edit" for 54.244.95.60 at 2016-06-30 13:17:53 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/sign_out" for 54.244.95.60 at 2016-06-30 13:17:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tI2YK7BwEE5E6zcrP0/yG5IN+h99IHTuUbYrmUWEhBcgYYJECKo5XjLOwrAIaQbUQJyN5A+hb59QPfKUMmp7YQ=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://pinteresting-194649.nitrousapp.com/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:17:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.2ms)
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:28:08 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (20.6ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `name' for #<Pin:0x00565102b31ba0>):
+     5:       <%= link_to image_tag(pin.image.url(:medium)), pin %>
+     6:       <div class="panel-body">
+     7:         <%= pin.description %><br>
+     8:         <strong><%= pin.user.name if pin.name %></strong>
+     9:         <% if pin.user == current_user %>
+    10:           <div class="actions">
+    11:             <%= link_to raw('<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit'), edit_pin_path(pin) %> |
+  app/views/pins/index.html.erb:8:in `block in _app_views_pins_index_html_erb___2896576297660103429_47452969496280'
+  app/views/pins/index.html.erb:3:in `_app_views_pins_index_html_erb___2896576297660103429_47452969496280'
+
+
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered .bundle/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.7ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:28:35 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.6ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (53.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 270ms (Views: 268.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for 54.244.95.60 at 2016-06-30 13:28:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 54.244.95.60 at 2016-06-30 13:28:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/boostrap_and_customization.self-4ee9ef6f0be66489ea2fec704a7da544c1d5d013ce71edbb5d224300d528fdbb.css?body=1" for 54.244.95.60 at 2016-06-30 13:28:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-06-30 13:28:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-15fb40683ff76041c7d6fe7764cd071eaf23b0c013f26dce6fe8564487cdf891.css?body=1" for 54.244.95.60 at 2016-06-30 13:28:36 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 54.244.95.60 at 2016-06-30 13:28:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:31:39 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.5ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/8" for 54.244.95.60 at 2016-06-30 13:31:41 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 74.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/8" for 54.244.95.60 at 2016-06-30 13:31:51 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/boostrap_and_customization.self-4ee9ef6f0be66489ea2fec704a7da544c1d5d013ce71edbb5d224300d528fdbb.css?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-15fb40683ff76041c7d6fe7764cd071eaf23b0c013f26dce6fe8564487cdf891.css?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 54.244.95.60 at 2016-06-30 13:31:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 54.244.95.60 at 2016-06-30 13:31:53 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:31:58 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.2ms)
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 54.244.95.60 at 2016-06-30 13:32:12 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 54.244.95.60 at 2016-06-30 13:32:14 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u0v0y3a3ErnF5Lkz2lD4otbqQ+km34bSFymEMuZmEYYiH0Onx4p5v2QoIeTb4iISKO+f0fZtPQG+daznqkUyjA==", "user"=>{"email"=>"deepak1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "deepak1@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-06-30 13:32:14.846344"], ["sign_in_count", 2], ["updated_at", "2016-06-30 13:32:14.847812"], ["id", 2]]
+  [1m[36m (7.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://pinteresting-194649.nitrousapp.com/
+Completed 302 Found in 190ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:32:15 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/8" for 54.244.95.60 at 2016-06-30 13:32:17 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pins/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:32:24 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/8" for 54.244.95.60 at 2016-06-30 13:32:25 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pins/show.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 54.244.95.60 at 2016-06-30 13:32:35 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v+/VsT/hgS4564ZLMJYQ/39pNkV3DkRa6BOuHCezbq4KjtG09l8w/x0vypVdcRETwAo7P4GxDDlQdw/73Hye1A=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to https://pinteresting-194649.nitrousapp.com/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:32:35 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  Rendered pages/_home.html.erb (0.2ms)
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 54.244.95.60 at 2016-06-30 13:32:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 54.244.95.60 at 2016-06-30 13:32:42 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TOBcUhR4YWbLnOGP+jX+y2E5xFx1oFtdN+T6QKu4IjqvKoiRnfyJZOQiY0ebOVsgWedNxKny7q3tnpw+4EnAhQ==", "user"=>{"email"=>"deepak@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "deepak@gmail.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TOBcUhR4YWbLnOGP+jX+y2E5xFx1oFtdN+T6QKu4IjqvKoiRnfyJZOQiY0ebOVsgWedNxKny7q3tnpw+4EnAhQ==", "user"=>{"email"=>"deepak@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 201ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 54.244.95.60 at 2016-06-30 13:32:48 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVWElrd+ByvP/6MFn7ZfzFfxA13TS1zIKhMRlKBEgUO6n1BVPvrvKeBBIc3+uvonby+KxQ8Z6TjwaXfq67Vj/A==", "user"=>{"email"=>"deepak@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "deepak@gmail.com"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WVWElrd+ByvP/6MFn7ZfzFfxA13TS1zIKhMRlKBEgUO6n1BVPvrvKeBBIc3+uvonby+KxQ8Z6TjwaXfq67Vj/A==", "user"=>{"email"=>"deepak@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 205ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 54.244.95.60 at 2016-06-30 13:33:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n8sjaSLKpfUcvPQ4NCeF77jhz8BvubVN1WgVQ1mln/x8Afeqq05N9zMCdvBVKyAEgD9GWLPrAL0PEnM9ElR9Qw==", "user"=>{"email"=>"deepak@deepak.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "deepak@deepak.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-06-30 12:24:28.871180"], ["current_sign_in_at", "2016-06-30 13:33:01.195313"], ["sign_in_count", 7], ["updated_at", "2016-06-30 13:33:01.196583"], ["id", 1]]
+  [1m[35m (6.9ms)[0m  commit transaction
+Redirected to https://pinteresting-194649.nitrousapp.com/
+Completed 302 Found in 178ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:33:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/8" for 54.244.95.60 at 2016-06-30 13:33:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins/8/edit" for 54.244.95.60 at 2016-06-30 13:33:06 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1[0m  [["user_id", 1], ["id", 8]]
+  Rendered pins/_form.html.erb (3.1ms)
+  Rendered pins/edit.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 38.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/pins/8" for 54.244.95.60 at 2016-06-30 13:33:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F3oVvpvfMjBczFHAn1fWcL93RYbAr+y76BZixWqOuGAsOEufKQ3kauXWHufT3CXVhM92V+7m8ce1wTW5rUrCQA==", "pin"=>{"description"=>"description"}, "commit"=>"Update Pin", "id"=>"8"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1  [["user_id", 1], ["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "pins" SET "description" = ?, "updated_at" = ? WHERE "pins"."id" = ?  [["description", "description"], ["updated_at", "2016-06-30 13:33:18.579761"], ["id", 8]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://pinteresting-194649.nitrousapp.com/pins/8
+Completed 302 Found in 19ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/pins/8" for 54.244.95.60 at 2016-06-30 13:33:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:33:22 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/5" for 54.244.95.60 at 2016-06-30 13:33:37 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/5/edit" for 54.244.95.60 at 2016-06-30 13:33:40 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1[0m  [["user_id", 1], ["id", 5]]
+  Rendered pins/_form.html.erb (1.2ms)
+  Rendered pins/edit.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 54.244.95.60 at 2016-06-30 13:33:44 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 49.7ms | ActiveRecord: 0.1ms)
+
+
+Started PUT "/users" for 54.244.95.60 at 2016-06-30 13:33:52 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RcHZmcTDSB6Sp4lI7I3i8mwfueMxMAsVo97gAH43nSN+g4e4dhGeRCu9xm+gBhFXV6eKMh95Fmn+Cbd8ufPnAw==", "user"=>{"name"=>"Deepakdeepak", "email"=>"deepak@deepak.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 232ms (Views: 62.2ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users" for 54.244.95.60 at 2016-06-30 13:33:58 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RouW2Rwy+aNSY3YSwAY4OocLO0vNJew2tF2Px1ihVH59ycj4ruAv+et5OTWMjcufvLMImuNs8Urpiti7n2UuXg==", "user"=>{"name"=>"Deepakdeepak", "email"=>"deepak@deepak.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Update"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:sign_up, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:11)
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(account_update) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method to add or remove any key:
+
+  To add any new key, use the `keys` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, keys: [:param1, :param2, :param3])
+
+  To remove any existing key, use the `except` keyword argument:
+  devise_parameter_sanitizer.permit(:account_update, except: [:email])
+ (called from configure_permitted_parameters at /home/nitrous/code/photograph/app/controllers/application_controller.rb:12)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["name", "Deepakdeepak"], ["updated_at", "2016-06-30 13:33:58.645356"], ["id", 1]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://pinteresting-194649.nitrousapp.com/
+Completed 302 Found in 182ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:33:58 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.6ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (23.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pins/7" for 54.244.95.60 at 2016-06-30 13:34:04 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:34:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/7" for 54.244.95.60 at 2016-06-30 13:35:02 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins/7" for 54.244.95.60 at 2016-06-30 13:35:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-06-30 13:35:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-15fb40683ff76041c7d6fe7764cd071eaf23b0c013f26dce6fe8564487cdf891.css?body=1" for 54.244.95.60 at 2016-06-30 13:35:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/boostrap_and_customization.self-4ee9ef6f0be66489ea2fec704a7da544c1d5d013ce71edbb5d224300d528fdbb.css?body=1" for 54.244.95.60 at 2016-06-30 13:35:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for 54.244.95.60 at 2016-06-30 13:35:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 54.244.95.60 at 2016-06-30 13:35:18 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 54.244.95.60 at 2016-06-30 13:35:19 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/pins/7" for 54.244.95.60 at 2016-06-30 13:36:44 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+iGzFDBMGLgNITvCW3wXoUIponbvIuJoZ7EiSsON3sjBY+01gp7O4rQ7dOUX9+QEeZGRp8Fr/xQ6ZnU2BEmk6A==", "id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1  [["user_id", 1], ["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "pins" WHERE "pins"."id" = ?  [["id", 7]]
+  [1m[36m (7.3ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/007/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/007/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/007/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 85ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:36:44 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pins"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 373ms (Views: 371.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/boostrap_and_customization.self-4ee9ef6f0be66489ea2fec704a7da544c1d5d013ce71edbb5d224300d528fdbb.css?body=1" for 54.244.95.60 at 2016-06-30 13:36:45 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 54.244.95.60 at 2016-06-30 13:36:45 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 54.244.95.60 at 2016-06-30 13:36:45 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for 54.244.95.60 at 2016-06-30 13:36:45 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-15fb40683ff76041c7d6fe7764cd071eaf23b0c013f26dce6fe8564487cdf891.css?body=1" for 54.244.95.60 at 2016-06-30 13:36:45 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/masonry/jquery.imagesloaded.min.self-c1d43d59c51c96f38689232f330c6de2816ec55a026ab1276dde2fbdf94b03d7.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for 54.244.95.60 at 2016-06-30 13:36:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 54.244.95.60 at 2016-06-30 13:36:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/pins/8" for 54.244.95.60 at 2016-06-30 13:36:50 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9q4LxJLL3QwOilfvwn8Xlr2woNOempel2XJ3qEANvAvN7FXlIBkLVreQGMiO9OQzhgiTArDTitmEpSDUh8nGKw==", "id"=>"8"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (4.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1[0m  [["user_id", 1], ["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 8]]
+  [1m[35m (9.3ms)[0m  commit transaction
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/008/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/008/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/008/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 26ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:36:50 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "pins"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/pins/6" for 54.244.95.60 at 2016-06-30 13:36:54 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NZqz6h2AqWdLp8udG36je0YWjqPfbYrIBohBLeXbkmwO2O3Lr1J/PfK9hLpX9VDefa69cvEkl7RbXxZRIh/oTA==", "id"=>"6"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1  [["user_id", 1], ["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "pins" WHERE "pins"."id" = ?  [["id", 6]]
+  [1m[36m (7.4ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/006/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/006/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/006/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 17ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:36:54 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/pins/5" for 54.244.95.60 at 2016-06-30 13:36:57 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"J5ghlcshEgt0WRzxZOW1ch02VQRnuAfQqcIacU/9+yQc2n+0efPEUc1DU9YobkbXJo5m1UnxGqz0FU0NiDmBBA==", "id"=>"5"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1[0m  [["user_id", 1], ["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 5]]
+  [1m[35m (9.0ms)[0m  commit transaction
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/005/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/005/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/005/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 20ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:36:58 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/pins/4" for 54.244.95.60 at 2016-06-30 13:37:00 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ShoE61KSPa2rJj4BPjG20JtGxUAreZHmDuW1F04dZxNxWFrK4EDr9xI8cSZyukV1oP72kQUwjJpTMuJridkdMw==", "id"=>"4"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1[0m  [["user_id", 1], ["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 4]]
+  [1m[35m (7.0ms)[0m  commit transaction
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/004/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/004/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/004/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 18ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:37:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/pins/3" for 54.244.95.60 at 2016-06-30 13:37:05 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Thln1L8MEJQZGEc5U5KMF9PSOOuZ+JeWIRC63heyitp1Wzn1Dd7GzqACCB4fGX+y6GoLOrexiup8x+2i0Hbw+g==", "id"=>"3"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1  [["user_id", 1], ["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "pins" WHERE "pins"."id" = ?  [["id", 3]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/003/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/003/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/003/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 18ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 13:37:05 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 13:37:07 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+  Rendered pins/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.3ms)
