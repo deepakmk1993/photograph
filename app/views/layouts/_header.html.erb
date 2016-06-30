@@ -15,16 +15,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to raw('<span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home'), root_path %></li>
-        <li><%= link_to raw('<span class="glyphicon glyphicon-apple" aria-hidden="true"></span> About'), about_path %></li>
-        <li><%= link_to raw('<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Pins'), pins_path %></li>
+
         <% if user_signed_in? %>
           <li><%= link_to raw('<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Pin'), new_pin_path %></li>
-          <li><%= link_to raw('<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings'), edit_user_registration_path %></li>
+          <li><%= link_to raw('<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Profile Settings'), edit_user_registration_path %></li>
           <li><%= link_to raw('<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log out'), destroy_user_session_path, method: :delete %></li>
         <% else %>
           <li><%= link_to raw('<span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Log in'), new_user_session_path %></li>
           <li><%= link_to raw('<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sign up'), new_user_registration_path %></li>
         <% end %>
+        <li><%= link_to raw('<span class="glyphicon glyphicon-apple" aria-hidden="true"></span> About'), about_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
