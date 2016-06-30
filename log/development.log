@@ -11533,3 +11533,196 @@ Processing by PinsController#index as HTML
   Rendered pins/index.html.erb within layouts/application (7.1ms)
   Rendered layouts/_header.html.erb (0.5ms)
 Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/pins/8" for 54.244.95.60 at 2016-06-30 08:33:38 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+PvjV7K0IAotlk/5gv9J92/YTfu5Wt0jICuYrbEAxA+UJNoG5snHvFgkaqIM3GmqDbAwburPTpfB4oCdIQChmA==", "id"=>"8"}
+  [1m[35mPin Load (0.7ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1  [["user_id", 2], ["id", 8]]
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "pins" WHERE "pins"."id" = ?  [["id", 8]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/008/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/008/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/008/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 23ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 08:33:39 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pins/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/pins/7" for 54.244.95.60 at 2016-06-30 08:33:42 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VhMmaaywPEFyZZ7WFk9Sf15V4JI7i8zVya3EsDOwPPM6zB84+M3b9wfXu42YbHIiPD2dB2geX2EoZNyAo7BZZA==", "id"=>"7"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1  [["user_id", 2], ["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "pins" WHERE "pins"."id" = ?  [["id", 7]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/007/original/monkeydluffy.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/007/medium/monkeydluffy.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/007/thumb/monkeydluffy.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 24ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 08:33:43 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pins/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/pins/9" for 54.244.95.60 at 2016-06-30 08:33:46 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+TdAEH1QrLNsilWHDrImZHqCMgtHqIGZJMFk/g0N3XSV6HlBKS1LBRk4cNyAkQY5GOpPnhQ9Ei3FCHzOnQ244w==", "id"=>"9"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1[0m  [["user_id", 2], ["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 9]]
+  [1m[35m (7.0ms)[0m  commit transaction
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/009/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/009/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/009/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 18ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 08:33:47 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 08:33:49 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 54.244.95.60 at 2016-06-30 08:33:51 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pins/new" for 54.244.95.60 at 2016-06-30 08:34:01 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pins/_form.html.erb (1.5ms)
+  Rendered pins/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for 54.244.95.60 at 2016-06-30 08:34:09 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zJ3xasOb/5les0rgDlqy8yMk0YzRj57hxHo8cPSQ2NCgQsg7l+YYLysBb7uAeZKuQUysGYIaDVUlsyRAZJC9Rw==", "pin"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007f1c0a52afa8 @tempfile=#<Tempfile:/tmp/RackMultipart20160630-2661-yxquha.jpg>, @original_filename="Album Folder.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"Album Folder.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Hello World"}, "commit"=>"Create Pin"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Command :: file -b --mime '/tmp/559efa2b0830d2a1a3a74498ca43515920160630-2661-hw3w58.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/fc7ecc95245cd957b645e16f240a755720160630-2661-1yfuhgt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/fc7ecc95245cd957b645e16f240a755720160630-2661-1yfuhgt.jpg[0]'
+Command :: convert '/tmp/fc7ecc95245cd957b645e16f240a755720160630-2661-1yfuhgt.jpg[0]' -auto-orient -resize "300x300>" '/tmp/62bc5c1a051bdeb1a3d1ff8c347e0b3820160630-2661-13i1xyn'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/fc7ecc95245cd957b645e16f240a755720160630-2661-1yfuhgt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/fc7ecc95245cd957b645e16f240a755720160630-2661-1yfuhgt.jpg[0]'
+Command :: convert '/tmp/fc7ecc95245cd957b645e16f240a755720160630-2661-1yfuhgt.jpg[0]' -auto-orient -resize "100x100>" '/tmp/62bc5c1a051bdeb1a3d1ff8c347e0b3820160630-2661-1ilo58'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/tmp/559efa2b0830d2a1a3a74498ca43515920160630-2661-2osovn.jpg'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "pins" ("description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["description", "Hello World"], ["image_file_name", "Album_Folder.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 14075], ["image_updated_at", "2016-06-30 08:34:09.589953"], ["user_id", 2], ["created_at", "2016-06-30 08:34:09.662124"], ["updated_at", "2016-06-30 08:34:09.662124"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+Redirected to https://pinteresting-194649.nitrousapp.com/pins/10
+Completed 302 Found in 93ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/pins/10" for 54.244.95.60 at 2016-06-30 08:34:09 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered pins/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 08:34:12 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered pins/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/pins/10" for 54.244.95.60 at 2016-06-30 08:34:32 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PribImI/6ffKh0T1j6Ain84fRrn3J7fDnXfit8a1Ss5SZ6JzNkIOQb81Ya4BgwLCrHc7LKSyJHd8vvqHVrUvWQ==", "id"=>"10"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."user_id" = ? AND "pins"."id" = ? LIMIT 1[0m  [["user_id", 2], ["id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "pins" WHERE "pins"."id" = ?[0m  [["id", 10]]
+  [1m[35m (6.9ms)[0m  commit transaction
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/010/original/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/010/medium/Album_Folder.jpg
+[paperclip] deleting /home/nitrous/code/photograph/public/system/pins/images/000/000/010/thumb/Album_Folder.jpg
+Redirected to https://pinteresting-194649.nitrousapp.com/pins
+Completed 302 Found in 17ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 08:34:33 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins" for 54.244.95.60 at 2016-06-30 08:34:41 +0000
+Cannot render console from 54.244.95.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.3ms)
