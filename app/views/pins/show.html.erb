@@ -1,10 +1,17 @@
-<%= image_tag @pin.image.url(:medium) %>
-
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
-<% if @pin.user == current_user %>
-  <%= link_to 'Edit', edit_pin_path(@pin) %> |
-<% end %>
-<%= link_to 'Back', pins_path %>
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading center">
+        <%= image_tag @pin.image.url(:medium) %>
+      </div>
+      <div class="panel-body">
+        <p><strong><%= @pin.description %></p></strong>
+        <% if @pin.user == current_user %>
+          <%= link_to raw('<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit'), edit_pin_path(@pin) %> |
+          <%= link_to raw('<span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Destroy'), @pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %><hr>
+        <%= link_to 'Back', pins_path %>
+      </div>
+    </div>
+  </div>
+</div>
