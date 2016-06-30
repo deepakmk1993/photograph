@@ -1,0 +1,15 @@
+current directory: /home/nitrous/code/photograph/.bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+/usr/local/opt/rbenv/versions/2.3.1/bin/ruby -r ./siteconf20160627-488-rld17o.rb extconf.rb
+creating Makefile
+
+current directory: /home/nitrous/code/photograph/.bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /home/nitrous/code/photograph/.bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.so
+
+current directory: /home/nitrous/code/photograph/.bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20160627-488-1oba60y
