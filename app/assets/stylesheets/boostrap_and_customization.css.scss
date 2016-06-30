@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-$body-bg:                      #ecf0f1;
 $font-family-sans-serif:       'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                45px;
-$navbar-default-bg:            white;
 $navbar-default-brand-color:   #c0392b;
 $brand-primary:                #c0392b;
-$jumbotron-bg:                 white;
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
@@ -17,4 +14,26 @@ $jumbotron-bg:                 white;
 
 .navbar-brand {
   font-weight: bold;
+}
+.nav a:hover {
+  color: #78C !important;
+}
+.white{
+  color:white;
+}
+body {
+  background: #a73737; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #a73737 , #7a2828); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #a73737 , #7a2828); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+nav{
+  background: #ECE9E6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.jumbotron {
+  color: white;
+  background: #606c88; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
